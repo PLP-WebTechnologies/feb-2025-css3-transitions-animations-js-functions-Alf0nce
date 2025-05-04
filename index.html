@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Animations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5c5e5c5e5c5e5c5e5c5e5c5e" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5c5e5c5e5c5e5c5e5c5e5c5e" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Animations</h1>
+        
+        <div class="preferences">
+            <h2>User Preferences</h2>
+            <form id="preferences-form">
+                <label for="theme">Select Theme:</label>
+                <select id="theme" name="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+                
+                <label for="animation-speed">Animation Speed:</label>
+                <select id="animation-speed" name="animation-speed">
+                    <option value="slow">Slow</option>
+                    <option value="normal">Normal</option>
+                    <option value="fast">Fast</option>
+                </select>
+                
+                <button type="submit" class="btn">Save Preferences</button>
+            </form>
+        </div>
+        
+        <div class="animation-area">
+            <h2>Animation Playground</h2>
+            <div class="animated-box" id="animated-box"></div>
+            <button id="animate-btn" class="btn pulse">Animate Box</button>
+            <button id="reset-btn" class="btn">Reset Animation</button>
+        </div>
+        
+        <div class="gallery">
+            <h2>Image Gallery</h2>
+            <div class="image-container">
+                <img src="T-Tech.jpg" alt="Placeholder" class="gallery-image zoom">
+                <img src="Tree.jpg" alt="Placeholder" class="gallery-image zoom">
+                <img src="Tech.jpg" alt="Placeholder" class="gallery-image zoom" style="height: 40%; width:40%;">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

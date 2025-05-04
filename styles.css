@@ -1,0 +1,153 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Theme Styles */
+body.light {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+body.blue {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+}
+
+/* Zoom Animation for Images */
+.zoom {
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+/* Animated Box */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+/* Animation Classes */
+.move-right {
+    transform: translateX(200px);
+}
+
+.change-color {
+    background-color: #FF5722;
+}
+
+.grow {
+    transform: scale(1.5);
+}
+
+.spin {
+    transform: rotate(360deg);
+}
+
+/* Animation Speed Classes */
+.slow {
+    transition-duration: 2s;
+    animation-duration: 3s;
+}
+
+.normal {
+    transition-duration: 0.5s;
+    animation-duration: 2s;
+}
+
+.fast {
+    transition-duration: 0.2s;
+    animation-duration: 1s;
+}
+
+/* Layout Styles */
+.preferences, .animation-area, .gallery {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark .preferences, 
+.dark .animation-area, 
+.dark .gallery {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.blue .preferences, 
+.blue .animation-area, 
+.blue .gallery {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #003366;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-image {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
